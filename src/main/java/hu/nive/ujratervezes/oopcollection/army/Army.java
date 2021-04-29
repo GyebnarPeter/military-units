@@ -13,7 +13,7 @@ public class Army {
 
     public void damageAll(int damage) {
         unit.forEach(unit -> unit.sufferDamage(damage));
-        unit.removeIf(unit -> unit.doDamage() < 25);
+        unit.removeIf(unit -> unit.getHitPoints() < 25);
     }
 
     public int getArmyDamage() {

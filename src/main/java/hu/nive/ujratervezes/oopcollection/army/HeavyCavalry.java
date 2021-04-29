@@ -21,6 +21,7 @@ public class HeavyCavalry extends MilitaryUnit {
         life -= damage / 2;
     }
 
+    @Override
     public int getHitPoints() {
         return life;
     }

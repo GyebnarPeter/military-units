@@ -17,6 +17,7 @@ public class Archer extends MilitaryUnit {
         life -= damage;
     }
 
+    @Override
     public int getHitPoints() {
         return life;
     }

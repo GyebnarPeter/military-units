@@ -28,6 +28,7 @@ public class Swordsman extends MilitaryUnit {
         attack++;
     }
 
+    @Override
     public int getHitPoints() {
         return life;
     }
