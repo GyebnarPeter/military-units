@@ -10,9 +10,9 @@ public class HeavyCavalry extends MilitaryUnit {
     @Override
     public int doDamage() {
         if(attack == 1) {
+            attack++;
             return damage * 3;
         }
-        attack++;
         return damage;
     }
 
@@ -22,6 +22,6 @@ public class HeavyCavalry extends MilitaryUnit {
     }
 
     public int getHitPoints() {
-        return 0;
+        return life;
     }
 }

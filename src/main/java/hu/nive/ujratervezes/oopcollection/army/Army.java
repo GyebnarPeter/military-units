@@ -17,7 +17,11 @@ public class Army {
     }
 
     public int getArmyDamage() {
-        return 0;
+        int sum = 0;
+        for (MilitaryUnit militaryUnit : unit) {
+            sum += militaryUnit.doDamage();
+        }
+        return sum;
     }
 
     public int getArmySize() {

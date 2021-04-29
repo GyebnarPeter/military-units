@@ -5,6 +5,7 @@ public class Archer extends MilitaryUnit {
     private int life = 50;
     private int damage = 20;
     private boolean shield = false;
+    private int hitPoints = 0;
 
     @Override
     public int doDamage() {
@@ -17,7 +18,7 @@ public class Archer extends MilitaryUnit {
     }
 
     public int getHitPoints() {
-        return 0;
+        return life;
     }
 
 }

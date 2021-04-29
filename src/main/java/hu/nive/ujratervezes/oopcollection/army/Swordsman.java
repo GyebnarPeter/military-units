@@ -20,6 +20,8 @@ public class Swordsman extends MilitaryUnit {
     public void sufferDamage(int damage) {
         if(attack == 1) {
             life -= 0;
+        } else if (shield) {
+            life -= damage / 2;
         } else {
             life -= damage;
         }
@@ -27,6 +29,6 @@ public class Swordsman extends MilitaryUnit {
     }
 
     public int getHitPoints() {
-        return 0;
+        return life;
     }
 }
